@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!-- ul li: ul 밑에 있는 li-->
+        <!-- ul>li: ul 직계 li-->
+        <!-- border는 상속X, color는 상속됨-->
+        <style>
+            ul li{
+                color:red;
+            }
+            #lecture>li{
+                border:1px solid red;
+            }
+            ul,ol{
+                background-color: powderblue;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+        <ol id="lecture">
+            <li>HTML</li>
+            <li>CSS
+                <ol>
+                    <li>selecotr</li>
+                    <li>declaration</li>
+                </ol>
+            </li>
+            <li>JavaScript</li>
+        </ol>
+    </body>
+</html>
